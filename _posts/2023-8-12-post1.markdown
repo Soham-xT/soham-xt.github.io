@@ -1,6 +1,6 @@
 ---
 layout: project-page
-title: test project
+title: testproject
 permalink: /test-project
 ---
 this is a test paragraph this is a test paragraph for my blog
