@@ -1,0 +1,86 @@
+
+
+
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project-list.css">
+    <title>Soham-xT</title>
+</head>
+<body class="">
+   <div class="main">
+    
+    
+    <div class="navcontainer">
+        <div class="title">
+           <a href="/home.html"><h2>Soham Takawadekar</h2></a>
+        </div>
+        <div class="nav">
+            <a class="underline-hover-effect" href="/home.html">Home</a>
+            <a class="underline-hover-effect" href="#">About me</a>
+            <a class="underline-hover-effect" href="/all-projects.html">Projects</a>
+            <a class="underline-hover-effect" href="#">Contact</a>
+        </div>
+        <div class="social">
+          
+            <div class="contact-icons">
+              <a href="mailto:%73%77%61%70%6E%65%65%6C.%6D%65%68%74%61%20%5B%61%74%5D%20%6E%79%75%20%5B%64%6F%74%5D%20%65%64%75" title="email"><i class="fas fa-envelope"></i></a>
+              <a href="#" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+          
+            
+          
+        </div>
+    </div>
+    <div class="content">
+        <div class="page-title"><h1>Projects</h1></div>
+
+      <div class="project-preview">
+        <ul>
+          <div class="thumbnail">
+            <img src-" {{ post.image }} "/>
+          </div>
+          {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url }}" class="preview-title">{{ post.title }}</a>
+              <div class="preview-content">{{ post.content | strip_html | truncatewords: 50 }}</div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+        
+    </div>
+    <div clss="blankk"><div class="blankcontainer">
+        <div class="darkicon" id="toggle">
+            <a id="icons" style="display:block;width:24px;font-size:1.5em;cursor:pointer;user-select:none">☾</a>
+        </div>
+    </div></div>
+  
+    
+   </div>
+ <script>
+         const toggleButton = document.getElementById("toggle");
+    const iconElement = document.getElementById("icons");
+    const body = document.body;
+
+    toggleButton.addEventListener("click", function() {
+    body.classList.toggle("dark-mode");
+    body.classList.toggle("light-mode");
+
+    if (body.classList.contains("dark-mode")) {
+        iconElement.textContent = "☼";
+    } else {
+        iconElement.textContent = "☾";
+    }
+    });
+ </script>
+
+</body></html>

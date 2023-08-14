@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/main.css">
+    <title>Soham-xT</title>
+</head>
+<body>
+  <div class="main">
+        
+        <div class="nav-container">
+            <div class="nav">
+                <a class="underline-hover-effect" href="/home.html">Home</a>
+                <a class="underline-hover-effect" hrrf="#">About me</a>
+                <a class="underline-hover-effect" href="/all-projects.html">Projects</a>
+                <a class="underline-hover-effect" hrrf="#">Contact</a>
+            </div>
+            <div class="social">        
+                <div class="contact-icons">
+                <a href="mailto:%73%77%61%70%6E%65%65%6C.%6D%65%68%74%61%20%5B%61%74%5D%20%6E%79%75%20%5B%64%6F%74%5D%20%65%64%75" title="email"><i class="fas fa-envelope"></i></a>
+                <a href="#" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>       
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="title">
+            <h2>{{ page.title }}</h2>
+            </div>
+        {% if page.title == "Soham Takawadekar" %}
+            <div class="about-container">
+            {{ content }}
+            </div>
+            {% else %}
+            {{ content }}
+            {% endif %}
+        </div>
+        <div class="blank-container">
+            <div class="darkicon" id="toggle">
+            <a id="icons"style="display:block;width:24px;font-size:1.5em;cursor:pointer;user-select:none">☾</a>
+            </div>
+        </div>
+  </div>
+<script>
+         const toggleButton = document.getElementById("toggle");
+    const iconElement = document.getElementById("icons");
+    const body = document.body;
+
+    toggleButton.addEventListener("click", function() {
+    body.classList.toggle("dark-mode");
+    body.classList.toggle("light-mode");
+
+    if (body.classList.contains("dark-mode")) {
+        iconElement.textContent = "☼";
+    } else {
+        iconElement.textContent = "☾";
+    }
+    });
+</script>
+
+</body>
