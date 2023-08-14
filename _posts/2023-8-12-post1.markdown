@@ -1,7 +1,7 @@
 ---
 layout: project-page
 title: test project
-permalink: /test-project
+permalink: 2023/08/12/post1.html
 ---
 this is a test paragraph this is a test paragraph for my blog
 this is a test paragraph this is a test paragraph for my blog
