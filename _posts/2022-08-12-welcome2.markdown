@@ -1,8 +1,12 @@
 ---
 layout: project-page
-title: Project 2
+title: Lagrangian Mechanics Visualized 
 permalink: /project2
 ---
+### Abstract: 
+    This blog post explores the chaotic behavior of a double pendulum using Lagrangian mechanics and Matplotlib. The Python code, presented in a Jupyter Notebook environment, provides a step-by-step guide to simulating and visualizing the system's motion. Through animated plots, we showcase the sensitivity to initial conditions, unraveling the mesmerizing dance of the double pendulum. This project serves as an accessible introduction to chaotic dynamics, demonstrating the power of mathematical modeling and visualization in understanding complex physical systems.
+
+    
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
